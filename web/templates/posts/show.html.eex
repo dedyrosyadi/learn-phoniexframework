@@ -1,0 +1,15 @@
+
+
+
+<h1><%= @post.title %></h1>
+<p>
+  <%= @post.content %>
+</p>
+
+
+<%= link to: post_path(@conn, :edit, @post), class: "btn btn-default" do %>
+	Edit
+<% end %>
+
+<%= link("Back", to: "/posts", class: "btn btn-primary")%>
+
